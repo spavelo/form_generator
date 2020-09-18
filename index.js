@@ -1,5 +1,6 @@
 function createForm(parentElementId, form) {
     let parentElement = document.getElementById(parentElementId)
+    parentElement.innerHTML = ''
 
     for (let item of form.fields) {
         let tag = document.createElement(item.tagName)
